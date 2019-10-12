@@ -4,17 +4,27 @@ class Race:
     def __init__(self):
         self.race_name = input(("Select from Android, Human, Kasatha, "
                                 "Lashunta, Shirren, Vesk, Ysoki: "))
-        self.ability_improvements, self.hp_improvement = self.get_attributes()
+
+        (self.ability_improvements, self.hp_improvement,
+            self.size_category, self.type_kw,
+            self.subtype_kw) = self.get_attributes()
 
     def get_attributes(self):
         by_name = {
-            "Android": ({"DEX": 2, "INT": 2, "CHA": -2}, 4),
-            "Human": ({self.prompt_ability(): 2}, 4),
-            "Kasatha": ({"STR": 2, "WIS": 2, "INT": -2}, 4),
-            "Lashunta": (self.divine_from_subrace(), 4),
-            "Shirren": ({"CON": 2, "WIS": 2, "CHA": -2}, 6),
-            "Vesk": ({"STR": 2, "CON": 2, "INT": -2}, 6),
-            "Ysoki": ({"DEX": 2, "INT": 2, "STR": -2}, 2)
+            "Android": ({"DEX": 2, "INT": 2, "CHA": -2}, 4,
+                "Medium", "Humanoid", "android"),
+            "Human": ({self.prompt_ability(): 2}, 4,
+                "Medium", "Humanoid", "human"),
+            "Kasatha": ({"STR": 2, "WIS": 2, "INT": -2}, 4,
+                "Medium", "Humanoid", "kasatha"),
+            "Lashunta": (self.divine_from_subrace(), 4,
+                "Medium", "Humanoid", "lahunta"),
+            "Shirren": ({"CON": 2, "WIS": 2, "CHA": -2}, 6,
+                "Medium", "Humanoid", "shirren"),
+            "Vesk": ({"STR": 2, "CON": 2, "INT": -2}, 6,
+                "Medium", "Humanoid", "vesk"),
+            "Ysoki": ({"DEX": 2, "INT": 2, "STR": -2}, 2,
+                "Small", "Humanoid", "ysoki")
         }
 
         return by_name[self.race_name]
