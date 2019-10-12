@@ -4,31 +4,17 @@ class Race:
     def __init__(self):
         self.race_name = input(("Select from Android, Human, Kasatha, "
                                 "Lashunta, Shirren, Vesk, Ysoki: "))
-        self.ability_improvements = self.get_abilities()
-        self.hit_point_improvement = self.get_hp()
+        self.ability_improvements, self.hp_improvement = self.get_attributes()
 
-    def get_abilities(self):
+    def get_attributes(self):
         by_name = {
-            "Android": {"DEX": 2, "INT": 2, "CHA": -2},
-            "Human": {self.prompt_ability(): 2},
-            "Kasatha": {"STR": 2, "WIS": 2, "INT": -2},
-            "Lashunta": self.divine_from_subrace(),
-            "Shirren": {"CON": 2, "WIS": 2, "CHA": -2},
-            "Vesk": {"STR": 2, "CON": 2, "INT": -2},
-            "Ysoki": {"DEX": 2, "INT": 2, "STR": -2}
-        }
-
-        return by_name[self.race_name]
-
-    def get_hp(self):
-        by_name = {
-            "Android": 4,
-            "Human": 4,
-            "Kasatha": 4,
-            "Lashunta": 4,
-            "Shirren": 6,
-            "Vesk": 6,
-            "Ysoki": 2
+            "Android": ({"DEX": 2, "INT": 2, "CHA": -2}, 4),
+            "Human": ({self.prompt_ability(): 2}, 4),
+            "Kasatha": ({"STR": 2, "WIS": 2, "INT": -2}, 4),
+            "Lashunta": (self.divine_from_subrace(), 4),
+            "Shirren": ({"CON": 2, "WIS": 2, "CHA": -2}, 6),
+            "Vesk": ({"STR": 2, "CON": 2, "INT": -2}, 6),
+            "Ysoki": ({"DEX": 2, "INT": 2, "STR": -2}, 2)
         }
 
         return by_name[self.race_name]
