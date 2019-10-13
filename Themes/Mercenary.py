@@ -9,7 +9,7 @@ class Mercenary:
                 "to aid your adventurous pursuits.  Reduce the DC of Culture "
                 "checks and Profession (mercenary) checks to recall knowledge "
                 "about hierarchies, practices, personnel, and so on in the "
-                "military by 5."
+                "military by 5. "
                 "Athletics is a class skill for you, though if it is a class "
                 "skill from the class you take at 1st level, you instead gain "
                 "a +1 bonus to Athletics checks.  In addition, you gain an "

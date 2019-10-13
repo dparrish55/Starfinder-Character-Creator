@@ -8,7 +8,7 @@ class Icon:
                 "Profession or Culture check to recall knowledge about other "
                 "icons of your profession or details about your profession's "
                 "cultural aspects, increase the DC by 5.  You gain a +1 bonus "
-                "to checks with your chosen Profession skill."
+                "to checks with your chosen Profession skill. "
                 "Culture also becomes a class "
                 "skill for you, though if it a class skill from the class you "
                 "take at 1st level, you instead gain a +1 bonus to your "
