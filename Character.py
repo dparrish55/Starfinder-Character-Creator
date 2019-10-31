@@ -29,7 +29,11 @@ class Character:
 
         self.get_abilities()
 
+        print("Your ability scores are: ")
         print(self.abilities)
+        print()
+        print("Your Racial Traits are: ")
+        print(self.my_race.traits)
 
 
     def choose_theme(self):
@@ -158,6 +162,7 @@ class Character:
                         assigned_abilities.append(which_ability)
                         self.abilities[which_ability] = projection
                 else:
+                    print("That ability already has an assigned score.")
                     loop_break = False
 
 
