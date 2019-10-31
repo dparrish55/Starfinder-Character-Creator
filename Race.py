@@ -1,10 +1,9 @@
 class Race:
     # placeholder with basic concept for race selection
     # No error handling in place yet.
-    def __init__(self):
-        self.race_name = input(("Select from Android, Human, Kasatha, "
-                                "Lashunta, Shirren, Vesk, Ysoki: "))
-
+    def __init__(self, race_name, subrace = None):
+        self.race_name = race_name
+        self.subrace = subrace
         (self.ability_improvements,
         self.hp_improvement,
         self.size_category,
@@ -86,7 +85,7 @@ class Race:
         # placeholder with basic concept for method
         # No error handling in place yet.
         if self.race_name == "Lashunta":
-            return ability_improvements[input("Select from Korasha, Damaya: ")]
+            return ability_improvements[self.subrace]
 
     racial_traits = {
         # android traits

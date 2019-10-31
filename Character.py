@@ -1,10 +1,11 @@
+import PySimpleGUI as sg
 import Race
 import Themes
 import random
 class Character:
-    def __init__(self):
-        self.my_race = Race.Race()
-        self.my_theme = self.choose_theme()
+    def __init__(self, my_race, my_theme):
+        self.my_race = my_race
+        self.my_theme = my_theme
         self.abilities = {
             "STR": 10,
             "DEX": 10,
@@ -36,76 +37,114 @@ class Character:
         print(self.my_race.traits)
 
 
-    def choose_theme(self):
-        chosen_theme = input("Select from Ace Pilot, Bounty Hunter, Icon, "
-            "Mercenary, Outlaw, Priest, Scholar, Spacefarer, Xenoseeker, "
-            "Themeless: ")
-        if chosen_theme == "Ace Pilot":
-            return Themes.AcePilot()
-        elif chosen_theme == "Bounty Hunter":
-            return Themes.BountyHunter()
-        elif chosen_theme == "Icon":
-            return Themes.Icon()
-        elif chosen_theme == "Mercenary":
-            return Themes.Mercenary()
-        elif chosen_theme == "Outlaw":
-            return Themes.Outlaw()
-        elif chosen_theme == "Priest":
-            return Themes.Priest()
-        elif chosen_theme == "Scholar":
-            return Themes.Scholar()
-        elif chosen_theme == "Spacefarer":
-            return Themes.Spacefarer()
-        elif chosen_theme == "Xenoseeker":
-            return Themes.Xenoseeker()
-        else:
-            return Themes.Themeless()
-
-
     def get_abilities(self):
-        print()
-        print("1) Point Buy - Use an assigned number of points to customize "
-              "your ability scores.")
-        print("2) Array - Choose from three arrays to distribute your ability "
-              "scores quickly.")
-        print("3) Roll Stats - Completely randomize your abilities.")
+        layout =  [
+            [sg.Radio('Point Buy', "RADIO1", default=True),
+             sg.Radio('Array', "RADIO1"),
+             sg.Radio('Roll', "RADIO1")],
+             [sg.OK()]
+        ]
+        event, values = sg.Window("Stat Generation Method", layout).Read()
 
-        which_method = int(input("How would you like to generate your ability"
-                                 "scores?: "))
-
-        if which_method == 1:
+        if values[0]:
             return self.point_buy()
-        elif which_method == 2:
+        elif values[1]:
             return self.pick_array()
-        elif which_method == 3:
-            return self.roll_stats()
         else:
-            print("Invalid entry. Please enter 1, 2, or 3.")
-            return self.get_abilities()
+            return self.roll_stats()
 
 
     def point_buy(self):
         for increase in self.ability_adjustments:
-            self.abilities[increase] += self.ability_adjustments
+            self.abilities[increase] += self.ability_adjustments[increase]
 
-        remaining_points = 10
-        while remaining_points > 0:
-            print()
-            print(self.abilities)
-            print("You have {} points left to spend.".format(remaining_points))
-            which_ability = input("Select from STR, DEX, CON, INT, WIS, CHA: ")
-            add_how_many = int(input("How many points?: "))
-            if add_how_many > remaining_points:
-                print("You don't have that many points to spend.")
-                continue
-            elif self.abilities[which_ability] + add_how_many > 18:
-                print("Final score cannot exceed 18.")
-                continue
+        points_allocated = False
+        while not points_allocated:
+            layout = [
+                [sg.Text('Please allocate up to 10 points.')],
+
+                [sg.Text('STR: '), sg.Text(self.abilities["STR"]),
+                                   sg.Slider(range=(0,18),
+                                            default_value=self.abilities["STR"],
+                                            orientation='horizontal')],
+
+                [sg.Text('DEX: '), sg.Text(self.abilities["DEX"]),
+                                   sg.Slider(range=(0,18),
+                                            default_value=self.abilities["DEX"],
+                                            orientation='horizontal')],
+
+                [sg.Text('CON: '), sg.Text(self.abilities["CON"]),
+                                   sg.Slider(range=(0,18),
+                                            default_value=self.abilities["CON"],
+                                            orientation='horizontal')],
+
+                [sg.Text('INT: '), sg.Text(self.abilities["INT"]),
+                                   sg.Slider(range=(0,18),
+                                            default_value=self.abilities["INT"],
+                                            orientation='horizontal')],
+
+                [sg.Text('WIS: '), sg.Text(self.abilities["WIS"]),
+                                   sg.Slider(range=(0,18),
+                                            default_value=self.abilities["WIS"],
+                                            orientation='horizontal')],
+
+                [sg.Text('CHA: '), sg.Text(self.abilities["CHA"]),
+                                   sg.Slider(range=(0,18),
+                                            default_value=self.abilities["CHA"],
+                                            orientation='horizontal')],
+
+                [sg.OK(), sg.Cancel()]
+            ]
+            event, values = sg.Window("Allocate Stats", layout).Read()
+            if event == "OK":
+                add_how_many = 0
+                if values[0]-self.abilities["STR"] > 0:
+                    add_how_many += values[0]-self.abilities["STR"]
+                if values[1]-self.abilities["DEX"] > 0:
+                    add_how_many += values[1]-self.abilities["DEX"]
+                if values[2]-self.abilities["CON"] > 0:
+                    add_how_many += values[2]-self.abilities["CON"]
+                if values[3]-self.abilities["INT"] > 0:
+                    add_how_many += values[3]-self.abilities["INT"]
+                if values[4]-self.abilities["WIS"] > 0:
+                    add_how_many += values[4]-self.abilities["WIS"]
+                if values[5]-self.abilities["CHA"] > 0:
+                    add_how_many += values[5]-self.abilities["CHA"]
+
+                if add_how_many > 10:
+                    layout = [
+                        [sg.Text('Please allocate only 10 points or fewer.')],
+                        [sg.OK()]
+                    ]
+                    sg.Window("Too many points!", layout).Read()
+                    continue
+                elif add_how_many < 10:
+                    layout = [
+                        [sg.Text("You've allocated fewer than 10 points.")],
+                        [sg.Text("Are you sure you want to continue?")],
+                        [sg.Button('Yes'), sg.Button('No')]
+                    ]
+                    event, trash = sg.Window("Forfeit " + str(add_how_many-10)
+                                             + " points?", layout).Read()
+                    if event == "Yes":
+                        self.commit_improvements(values)
+                        points_allocated = True
+                    else:
+                        continue
+                else:
+                    self.commit_improvements(values)
+                    points_allocated = True
             else:
-                self.abilities[which_ability] += add_how_many
-                if add_how_many < 0:
-                    add_how_many = 0
-                remaining_points -= add_how_many
+                break
+
+
+    def commit_improvements(self, values):
+        self.abilities["STR"] = values[0]
+        self.abilities["DEX"] = values[1]
+        self.abilities["CON"] = values[2]
+        self.abilities["INT"] = values[3]
+        self.abilities["WIS"] = values[4]
+        self.abilities["CHA"] = values[5]
 
 
     def pick_array(self):
@@ -164,6 +203,3 @@ class Character:
                 else:
                     print("That ability already has an assigned score.")
                     loop_break = False
-
-
-dannie = Character()
