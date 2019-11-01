@@ -1,3 +1,4 @@
+import PySimpleGUI as sg
 class Race:
     # placeholder with basic concept for race selection
     # No error handling in place yet.
@@ -74,8 +75,15 @@ class Race:
     def prompt_ability(self):
         # placeholder with basic concept for method
         # No error handling in place yet.
+        ability_names = ["STR", "DEX", "CON", "INT", "WIS", "CHA"]
         if self.race_name == "Human":
-            return input("Select from STR, DEX, CON, INT, WIS, CHA: ")
+            layout = [
+                [sg.Text('Please select your racial bonus.')],
+                [sg.Text('+2 to: '), sg.Combo(ability_names)],
+                [sg.OK()]
+            ]
+            event, values = sg.Window("Racial Bonus", layout).Read()
+            return values[0]
 
     def divine_from_subrace(self):
         ability_improvements = {

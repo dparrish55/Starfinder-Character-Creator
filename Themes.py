@@ -1,3 +1,4 @@
+import PySimpleGUI as sg
 class AcePilot:
     def __init__(self):
         self.ability_improvement = {"DEX": 1}
@@ -220,7 +221,14 @@ class Themeless:
     def prompt_ability(self):
         # placeholder with basic concept for method
         # No error handling in place yet.
-        return input("Select from STR, DEX, CON, INT, WIS, CHA: ")
+        ability_names = ["STR", "DEX", "CON", "INT", "WIS", "CHA"]
+        layout = [
+            [sg.Text('Please select your racial bonus.')],
+            [sg.Text('+1 to: '), sg.Combo(ability_names)],
+            [sg.OK()]
+        ]
+        event, values = sg.Window("Theme Bonus", layout).Read()
+        return values[0]
 
 class Xenoseeker:
     def __init__(self):

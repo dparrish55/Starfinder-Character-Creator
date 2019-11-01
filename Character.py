@@ -59,73 +59,68 @@ class Character:
             self.abilities[increase] += self.ability_adjustments[increase]
 
         points_allocated = False
+        remaining_points = 10
+        layout = [
+            [sg.Text('Please allocate up to 10 points total.')],
+
+            [sg.Text('You have '), sg.T('10',key='remaining_points'),
+                               sg.Text(' points remaining.')],
+
+            [sg.Text('STR: '), sg.Text(self.abilities["STR"]),
+                               sg.Slider(key = "STR", range=(0,18),
+                               default_value=self.abilities["STR"],
+                               orientation='horizontal',
+                               enable_events = True)],
+
+            [sg.Text('DEX: '), sg.Text(self.abilities["DEX"]),
+                               sg.Slider(key = "DEX", range=(0,18),
+                               default_value=self.abilities["DEX"],
+                               orientation='horizontal',
+                               enable_events = True)],
+
+            [sg.Text('CON: '), sg.Text(self.abilities["CON"]),
+                               sg.Slider(key = "CON", range=(0,18),
+                               default_value=self.abilities["CON"],
+                               orientation='horizontal',
+                               enable_events = True)],
+
+            [sg.Text('INT: '), sg.Text(self.abilities["INT"]),
+                               sg.Slider(key = "INT", range=(0,18),
+                               default_value=self.abilities["INT"],
+                               orientation='horizontal',
+                               enable_events = True)],
+
+            [sg.Text('WIS: '), sg.Text(self.abilities["WIS"]),
+                               sg.Slider(key = "WIS", range=(0,18),
+                               default_value=self.abilities["WIS"],
+                               orientation='horizontal',
+                               enable_events = True)],
+
+            [sg.Text('CHA: '), sg.Text(self.abilities["CHA"]),
+                               sg.Slider(key = "CHA", range=(0,18),
+                               default_value=self.abilities["CHA"],
+                               orientation='horizontal',
+                               enable_events = True)],
+
+            [sg.OK(), sg.Cancel()]
+        ]
+        my_window = sg.Window("Allocate Stats", layout)
         while not points_allocated:
-            layout = [
-                [sg.Text('Please allocate up to 10 points.')],
+            event, values = my_window.Read()
 
-                [sg.Text('STR: '), sg.Text(self.abilities["STR"]),
-                                   sg.Slider(range=(0,18),
-                                            default_value=self.abilities["STR"],
-                                            orientation='horizontal')],
-
-                [sg.Text('DEX: '), sg.Text(self.abilities["DEX"]),
-                                   sg.Slider(range=(0,18),
-                                            default_value=self.abilities["DEX"],
-                                            orientation='horizontal')],
-
-                [sg.Text('CON: '), sg.Text(self.abilities["CON"]),
-                                   sg.Slider(range=(0,18),
-                                            default_value=self.abilities["CON"],
-                                            orientation='horizontal')],
-
-                [sg.Text('INT: '), sg.Text(self.abilities["INT"]),
-                                   sg.Slider(range=(0,18),
-                                            default_value=self.abilities["INT"],
-                                            orientation='horizontal')],
-
-                [sg.Text('WIS: '), sg.Text(self.abilities["WIS"]),
-                                   sg.Slider(range=(0,18),
-                                            default_value=self.abilities["WIS"],
-                                            orientation='horizontal')],
-
-                [sg.Text('CHA: '), sg.Text(self.abilities["CHA"]),
-                                   sg.Slider(range=(0,18),
-                                            default_value=self.abilities["CHA"],
-                                            orientation='horizontal')],
-
-                [sg.OK(), sg.Cancel()]
-            ]
-            event, values = sg.Window("Allocate Stats", layout).Read()
             if event == "OK":
                 add_how_many = 0
-                if values[0]-self.abilities["STR"] > 0:
-                    add_how_many += values[0]-self.abilities["STR"]
-                if values[1]-self.abilities["DEX"] > 0:
-                    add_how_many += values[1]-self.abilities["DEX"]
-                if values[2]-self.abilities["CON"] > 0:
-                    add_how_many += values[2]-self.abilities["CON"]
-                if values[3]-self.abilities["INT"] > 0:
-                    add_how_many += values[3]-self.abilities["INT"]
-                if values[4]-self.abilities["WIS"] > 0:
-                    add_how_many += values[4]-self.abilities["WIS"]
-                if values[5]-self.abilities["CHA"] > 0:
-                    add_how_many += values[5]-self.abilities["CHA"]
+                for abbrev in self.abilities.keys():
+                    if values[abbrev]-self.abilities[abbrev] > 0:
+                        add_how_many += values[abbrev]-self.abilities[abbrev]
 
                 if add_how_many > 10:
-                    layout = [
-                        [sg.Text('Please allocate only 10 points or fewer.')],
-                        [sg.OK()]
-                    ]
-                    sg.Window("Too many points!", layout).Read()
+                    sg.Popup("Please allocate only 10 points or fewer.")
                     continue
                 elif add_how_many < 10:
-                    layout = [
-                        [sg.Text("You've allocated fewer than 10 points.")],
-                        [sg.Text("Are you sure you want to continue?")],
-                        [sg.Button('Yes'), sg.Button('No')]
-                    ]
-                    event, trash = sg.Window("Forfeit " + str(add_how_many-10)
-                                             + " points?", layout).Read()
+                    remaining_points = int(10 - add_how_many)
+                    event = sg.PopupYesNo("Forfeit " + str(remaining_points)
+                                             + " unallocated points?")
                     if event == "Yes":
                         self.commit_improvements(values)
                         points_allocated = True
@@ -134,17 +129,25 @@ class Character:
                 else:
                     self.commit_improvements(values)
                     points_allocated = True
-            else:
+
+            elif event in (None, "Cancel"):
                 break
+
+            else:
+                remaining_points = 10
+                for abbrev in self.abilities.keys():
+                    if values[abbrev]-self.abilities[abbrev] > 0:
+                        remaining_points -= (values[abbrev]
+                                           -self.abilities[abbrev])
+
+                my_window.Element('remaining_points').Update(
+                    str(int(remaining_points))
+                )
 
 
     def commit_improvements(self, values):
-        self.abilities["STR"] = values[0]
-        self.abilities["DEX"] = values[1]
-        self.abilities["CON"] = values[2]
-        self.abilities["INT"] = values[3]
-        self.abilities["WIS"] = values[4]
-        self.abilities["CHA"] = values[5]
+        for abbrev in self.abilities.keys():
+            self.abilities[abbrev] = int(values[abbrev])
 
 
     def pick_array(self):
