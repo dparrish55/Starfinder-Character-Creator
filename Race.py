@@ -82,7 +82,10 @@ class Race:
                 [sg.Text('+2 to: '), sg.Combo(ability_names)],
                 [sg.OK()]
             ]
-            event, values = sg.Window("Racial Bonus", layout).Read()
+            human_prompt_window = sg.Window("Racial Bonus", layout)
+            event, values = human_prompt_window.Read()
+            human_prompt_window.close()
+            del human_prompt_window
             return values[0]
 
     def divine_from_subrace(self):

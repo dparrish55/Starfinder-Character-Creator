@@ -1,9 +1,10 @@
 import PySimpleGUI as sg
 class AcePilot:
     def __init__(self):
+        self.theme_name = "Ace Pilot"
         self.ability_improvement = {"DEX": 1}
         self.traits = {
-            1: {"Ace Pilot Knowledge":
+            1: ("Ace Pilot Knowledge",
                 "You are obsessed with starships and vehicles, and have "
                 "committed to memory almost every related tidbit of knowledge "
                 "you've ever come across. Reduce the DC of Culture checks to "
@@ -12,20 +13,21 @@ class AcePilot:
                 "skill for you, though if it a class skill from the class you "
                 "take at 1st level, you instead gain a +1 bonus to your "
                 "Piloting checks. In addition, you gain an ability adjustment "
-                "of +1 to Dexterity at character creation."},
-            6: {"Lone Wolf":
-                "Future Implement"},
-            12: {"Need For Speed":
-                "Future Implement"},
-            18: {"Master Pilot":
-                "Future Implement"}
+                "of +1 to Dexterity at character creation."),
+            6: ("Lone Wolf",
+                "Future Implement"),
+            12: ("Need For Speed",
+                "Future Implement"),
+            18: ("Master Pilot",
+                "Future Implement")
         }
 
 class BountyHunter:
     def __init__(self):
+        self.theme_name = "Bounty Hunter"
         self.ability_improvement = {"CON": 1}
         self.traits = {
-            1: {"Bounty Hunter Knowledge":
+            1: ("Bounty Hunter Knowledge",
                 "Your mind is a cold steel trap when it comes to scraps of "
                 "information about the creatures you're tracking down.  Choose "
                 "a specific sentient creature that you can identify by name, "
@@ -45,20 +47,21 @@ class BountyHunter:
                 "skill from the class you take at 1st level, you instead gain "
                 "a +1 bonus to Survival checks.  In addition, you gain an "
                 "ability adjustment of +1 to Constitution at character "
-                "creation."},
-            6: {"Swift Hunter":
-                "Future Implement"},
-            12: {"Relentless":
-                "Future Implement"},
-            18: {"Master Hunter":
-                "Future Implement"}
+                "creation."),
+            6: ("Swift Hunter",
+                "Future Implement"),
+            12: ("Relentless",
+                "Future Implement"),
+            18: ("Master Hunter",
+                "Future Implement")
         }
 
 class Icon:
     def __init__(self):
+        self.theme_name = "Icon"
         self.ability_improvement = {"CHA": 1}
         self.traits = {
-            1: {"Icon Knowledge":
+            1: ("Icon Knowledge",
                 "Choose a Profession skill. You are hooked deeply into the "
                 "culture of your iconic profession.  When attempting a "
                 "Profession or Culture check to recall knowledge about other "
@@ -69,20 +72,21 @@ class Icon:
                 "skill for you, though if it a class skill from the class you "
                 "take at 1st level, you instead gain a +1 bonus to your "
                 "Culture checks. In addition, you gain an ability adjustment "
-                "of +1 to Charisma at character creation."},
-            6: {"Celebrity":
-                "Future Implement"},
-            12: {"MegaCelebrity":
-                "Future Implement"},
-            18: {"Master Icon":
-                "Future Implement"}
+                "of +1 to Charisma at character creation."),
+            6: ("Celebrity",
+                "Future Implement"),
+            12: ("MegaCelebrity",
+                "Future Implement"),
+            18: ("Master Icon",
+                "Future Implement")
         }
 
 class Mercenary:
     def __init__(self):
+        self.theme_name = "Mercenary"
         self.ability_improvement = {"STR": 1}
         self.traits = {
-            1: {"Mercenary Knowledge":
+            1: ("Mercenary Knowledge",
                 "You are knowledgeable about the military, from rival "
                 "mercenary groups to standard military procedures to planetary "
                 "armed forces, and you can draw upon this fount of information "
@@ -94,20 +98,21 @@ class Mercenary:
                 "skill from the class you take at 1st level, you instead gain "
                 "a +1 bonus to Athletics checks.  In addition, you gain an "
                 "ability adjustment of +1 to Strength at character "
-                "creation."},
-            6: {"Grunt":
-                "Future Implement"},
-            12: {"Squad Leader":
-                "Future Implement"},
-            18: {"Commander":
-                "Future Implement"}
+                "creation."),
+            6: ("Grunt",
+                "Future Implement"),
+            12: ("Squad Leader",
+                "Future Implement"),
+            18: ("Commander",
+                "Future Implement")
         }
 
 class Outlaw:
     def __init__(self):
+        self.theme_name = "Outlaw"
         self.ability_improvement = {"DEX": 1}
         self.traits = {
-            1: {"Outlaw Knowledge":
+            1: ("Outlaw Knowledge",
                 "You are well connected to shadowy secrets and back-alley "
                 "deals, and you both know about key players and have handy "
                 "skills of your own.  Reduce the DC of Culture checks to "
@@ -116,22 +121,23 @@ class Outlaw:
                 "class skill from the class you take at 1st level, you instead "
                 "gain a +1 bonus to Sleight of Hand checks.  In addition, you "
                 "gain an ability adjustment of +1 to Dexterity at character "
-                "creation."},
-            6: {"Legal Corruption":
-                "Future Implement"},
-            12: {"Black Market Connections":
-                "Future Implement"},
-            18: {"Master Outlaw":
-                "Future Implement"}
+                "creation."),
+            6: ("Legal Corruption",
+                "Future Implement"),
+            12: ("Black Market Connections",
+                "Future Implement"),
+            18: ("Master Outlaw",
+                "Future Implement")
         }
 
 class Priest:
     def __init__(self):
+        self.theme_name = "Priest"
         self.ability_improvement = {"WIS": 1}
         self.traits = {
-            1: {"Priest Knowledge":
+            1: ("Priest Knowledge",
                 "Choose a deity or a philosophy whose alignment is within one "
-                "step (on eigher the good-evil axis or the law-chaos axis) of "
+                "step (on either the good-evil axis or the law-chaos axis) of "
                 "your own.  Rduce the DC of Culture and Mysticism checks to "
                 "recall knowledge about religious traditions, religious "
                 "symbols, and famous religious leaders by 5. "
@@ -139,20 +145,21 @@ class Priest:
                 "skill from the class you take at 1st level, you instead gain "
                 "a +1 bonus to Mysticism checks.  In addition, you gain an "
                 "ability adjustment of +1 to Constitution at character "
-                "creation."},
-            6: {"Mantle of the Clergy":
-                "Future Implement"},
-            12: {"Divine Boon":
-                "Future Implement"},
-            18: {"True Communion":
-                "Future Implement"}
+                "creation."),
+            6: ("Mantle of the Clergy",
+                "Future Implement"),
+            12: ("Divine Boon",
+                "Future Implement"),
+            18: ("True Communion",
+                "Future Implement")
         }
 
 class Scholar:
     def __init__(self):
+        self.theme_name = "Scholar"
         self.ability_improvement = {"INT": 1}
         self.traits = {
-            1: {"Scholar Knowledge":
+            1: ("Scholar Knowledge",
                 "You are an expert in one partiular field of study, and your "
                 "passion for the subject shows.  Choose either Life Science or "
                 "Physical Science and then choose a field of specialization.  "
@@ -168,20 +175,21 @@ class Scholar:
                 "class skill from the class you take at 1st level, you instead "
                 "gain a +1 bonus to checks with your chosen skill.  In "
                 "addition, you gain an ability adjustment of +1 to "
-                "Intelligence at character creation."},
-            6: {"Tip of the Tongue":
-                "Future Implement"},
-            12: {"Research Maven":
-                "Future Implement"},
-            18: {"Master Scholar":
-                "Future Implement"}
+                "Intelligence at character creation."),
+            6: ("Tip of the Tongue",
+                "Future Implement"),
+            12: ("Research Maven",
+                "Future Implement"),
+            18: ("Master Scholar",
+                "Future Implement")
         }
 
 class Spacefarer:
     def __init__(self):
+        self.theme_name = "Spacefarer"
         self.ability_improvement = {"CON": 1}
         self.traits = {
-            1: {"Spacefarer Knowledge":
+            1: ("Spacefarer Knowledge",
                 "You are obsessed with distant worlds, and you always mentally "
                 "catalog everything you learn about new and strange places so "
                 "you can recall it when you need it most.  Additionally, you "
@@ -193,29 +201,30 @@ class Spacefarer:
                 "class skill from the class you take at 1st level, you instead "
                 "gain a +1 bonus to Physical Science checks.  In addition, you "
                 "gain an ability adjustment of +1 to Constitution at character "
-                "creation."},
-            6: {"Eager Dabbler":
-                "Future Implement"},
-            12: {"Jack of All Trades":
-                "Future Implement"},
-            18: {"Master Explorer":
-                "Future Implement"}
+                "creation."),
+            6: ("Eager Dabbler",
+                "Future Implement"),
+            12: ("Jack of All Trades",
+                "Future Implement"),
+            18: ("Master Explorer",
+                "Future Implement")
         }
 
 class Themeless:
     def __init__(self):
+        self.theme_name = "Themeless"
         self.ability_improvement = {self.prompt_ability(): 1}
         self.traits = {
-            1: {"General Knowledge":
+            1: ("General Knowledge",
                 "You gain a class skill of your choice when you create a "
                 "themeless character. Also, you gain an ability adjustment of "
-                "+1 to any ability score you choose."},
-            6: {"Certainty":
-                "Future Implement"},
-            12: {"Extensive Studies":
-                "Future Implement"},
-            18: {"Steely Determination":
-                "Future Implement"}
+                "+1 to any ability score you choose."),
+            6: ("Certainty",
+                "Future Implement"),
+            12: ("Extensive Studies",
+                "Future Implement"),
+            18: ("Steely Determination",
+                "Future Implement")
         }
 
     def prompt_ability(self):
@@ -232,9 +241,10 @@ class Themeless:
 
 class Xenoseeker:
     def __init__(self):
+        self.theme_name = "Xenoseeker"
         self.ability_improvement = {"CHA": 1}
         self.traits = {
-            1: {"Xenoseeker Knowledge":
+            1: ("Xenoseeker Knowledge",
                 "You are trained to seek out, identify, and interact with "
                 "alien life-forms. Reduce the DC to identify a rare creature "
                 "using Life Science by 5. "
@@ -242,11 +252,11 @@ class Xenoseeker:
                 "class skill from the class you take at 1st level, you instead "
                 "gain a +1 bonus to Life Science checks.  In addition, you "
                 "gain an ability adjustment of +1 to Charisma at character "
-                "creation."},
-            6: {"Quick Pidgin":
-                "Future Implement"},
-            12: {"First Contact":
-                "Future Implement"},
-            18: {"Brilliant Discovery":
-                "Future Implement"}
+                "creation."),
+            6: ("Quick Pidgin",
+                "Future Implement"),
+            12: ("First Contact",
+                "Future Implement"),
+            18: ("Brilliant Discovery",
+                "Future Implement")
         }
