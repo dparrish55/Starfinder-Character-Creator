@@ -144,7 +144,9 @@ class Character:
             return False
 
     def choose_theme(self):
-        themes = Themes.get_themes()
+        themes_file = open("themes.txt", "r")
+        themes = themes_file.read().splitlines()
+        themes_file.close()
 
         layout = [
             [sg.Text('Please select your character theme.')],

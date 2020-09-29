@@ -1,25 +1,10 @@
 # coding=utf-8
 import PySimpleGUI as sg
-import requests
-from bs4 import BeautifulSoup
 
 
-def get_themes():
-    url = "https://www.starjammersrd.com/the-basics/character-themes/"
-    page = requests.get(url)
-
-    soup = BeautifulSoup(page.content, "html.parser")
-    themes_list = []
-    for theme in soup.find_all("li", {"class": "page new parent"}):
-        if '(' in theme.string:
-            trim = theme.string.find('(')
-            themes_list.append(theme.string[0:trim-1])
-        else:
-            trim = theme.string.find('+')
-            themes_list.append(theme.string[0:trim-1])
-
-    return themes_list
-
+class Theme:
+    def __init__(self, theme_name):
+        self.theme_name
 
 
 class AcePilot:

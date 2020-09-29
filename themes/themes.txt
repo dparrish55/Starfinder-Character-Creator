@@ -1,0 +1,43 @@
+Ace Pilot
+Athlete
+Biotechnician
+Bounty Hunter
+Bureaucrat
+Colonist
+Corporate Agent
+Cult Hunter
+Cultist
+Cyberborn
+Death-Touched
+Dragonblood
+Dream Prophet
+Formless Emissary
+Giantblood
+Gladiator
+Golden Oldie
+Grifter
+Guard
+Icon
+Infamous
+Law Officer
+Mercenary
+Noble Scion
+Outlaw
+Paranormal Investigator
+Priest
+Prisoner
+Quartermaster
+Roboticist
+Scholar
+Sensate
+Shipbuilder
+Solar Disciple
+Space Pirate
+Spacefarer
+Stormrunner
+Street Rat
+Tempered Pilgrim
+Tinker
+Wild Warden
+Xenoarchaeologist
+Xenoseeker
