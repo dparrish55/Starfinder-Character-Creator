@@ -143,10 +143,8 @@ class Character:
             self.my_race = None
             return False
 
-
     def choose_theme(self):
-        themes = ["Ace Pilot", "Bounty Hunter", "Icon", "Mercenary", "Outlaw",
-                 "Priest", "Scholar", "Spacefarer", "Xenoseeker", "Themeless"]
+        themes = Themes.get_themes()
 
         layout = [
             [sg.Text('Please select your character theme.')],
