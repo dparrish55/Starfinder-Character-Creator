@@ -46,6 +46,7 @@ def get_themes():
 
         for ability in abilities_container.find_all("p"):
             ability_text = ability.getText()
+            ability_text = ability_text.replace("(1st)", "").replace("(6th)", "").replace("(12th)", "").replace("(18th)", "")
             if "Starfinder" in ability_text:
                 continue
 
