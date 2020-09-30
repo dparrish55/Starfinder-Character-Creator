@@ -16,12 +16,20 @@ def get_themes():
     soup = BeautifulSoup(page.content, "html.parser")
 
     for theme in soup.find_all("li", {"class": "page new parent"}):
-        if '(' in theme.string:
-            trim = theme.string.find('(')
+        theme_and_mod = theme.string.replace("(", "")
+        theme_and_mod = theme_and_mod.replace(")", "")
+        if '+' in theme_and_mod:
+            trim = theme_and_mod.find('+')
         else:
-            trim = theme.string.find('+')
+            trim = theme.string.find('(')
 
-        theme_space = theme.string[0:trim-1]
+        theme_space = theme_and_mod[0:trim-1]
+        theme_mod = theme_and_mod[trim:] + '\n'
+        theme_mod = theme_mod.replace("+1", "")
+        theme_mod = theme_mod.replace(" ", "")
+        theme_mod = theme_mod.replace(",", "or")
+        theme_mod = theme_mod.replace("oror", "or")
+        theme_mod = theme_mod.replace("or", "*_*")
 
         themes_file.write(theme_space)
         themes_file.write('\n')
@@ -30,12 +38,16 @@ def get_themes():
 
         rel_path = theme_name + ".txt"
         abs_file_path = os.path.join(script_dir, rel_path)
+        if os.path.exists(abs_file_path):
+            continue
+
         sub_theme_file = open(abs_file_path, "w", encoding = "utf-8")
 
         theme_url = theme.a['href']
         theme_page = requests.get(theme_url)
 
         theme_soup = BeautifulSoup(theme_page.content, "html.parser")
+        sub_theme_file.write(theme_mod)
 
         print(theme_url)
 
@@ -51,11 +63,11 @@ def get_themes():
                 continue
 
             if tooltip == True:
-                sub_theme_file.write("*%*")
+                # sub_theme_file.write("*%*")
                 tooltip = False
             elif ability in theme_soup.find_all("p", {"class": "name"}):
                 sub_theme_file.write('\n')
-                sub_theme_file.write("*!*")
+                # sub_theme_file.write("*!*")
                 prev_strong = True
             else:
                 if prev_strong == True:
@@ -72,7 +84,7 @@ def get_themes():
         sub_theme_file.write('\n')
         sub_theme_file.close()
 
-
     themes_file.close()
+
 
 get_themes()

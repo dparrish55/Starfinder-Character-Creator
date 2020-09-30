@@ -2,6 +2,9 @@ import PySimpleGUI as sg
 import Race
 import Themes
 import random
+import os
+
+
 class Character:
     def __init__(self, character_sheet):
         self.my_race = None
@@ -27,7 +30,7 @@ class Character:
         character_window = sg.Window("Character Sheet", character_sheet)
         while True:
             character_event, values = character_window.Read()
-            if character_event == None:
+            if character_event is None:
                 break
 
             elif character_event == "btn_generate":
@@ -78,9 +81,8 @@ class Character:
                             self.my_theme.traits[trait_level][1],
                             disabled=True,
                             size=(45,5)
-                        )] for trait_level in (1,6,12,18)
-                        if trait_level <= self.my_level and
-                        self.my_theme is not None
+                        )] for trait_level in (1, 6, 12, 18)
+                        if trait_level <= self.my_level and self.my_theme is not None
                 ] + [[sg.Text("")]] + [
                     [sg.Text("Race_____________________________________________"
                         "______________________________")]
@@ -101,10 +103,10 @@ class Character:
             activate_btn_generate = (
                 self.my_race is not None and
                 self.my_theme is not None and
-                self.generated == False)
+                self.generated is False)
 
             character_window.Element("btn_generate").Update(
-                disabled = not activate_btn_generate
+                disabled=not activate_btn_generate
             )
 
     def choose_race(self):
@@ -144,9 +146,13 @@ class Character:
             return False
 
     def choose_theme(self):
-        themes_file = open("themes.txt", "r")
+        script_dir = os.path.realpath("themes")
+        rel_path = "themes.txt"
+        abs_file_path = os.path.join(script_dir, rel_path)
+        themes_file = open(abs_file_path, "r")
         themes = themes_file.read().splitlines()
         themes_file.close()
+        themes.append("Themeless")
 
         layout = [
             [sg.Text('Please select your character theme.')],
@@ -156,40 +162,23 @@ class Character:
         theme_window = sg.Window("Choose Theme", layout)
         event, values = theme_window.Read()
 
+        theme_window.close()
+
         if event == "OK":
             chosen_theme = values[0]
-            if chosen_theme == "Ace Pilot":
-                self.my_theme = Themes.AcePilot()
-            elif chosen_theme == "Bounty Hunter":
-                self.my_theme = Themes.BountyHunter()
-            elif chosen_theme == "Icon":
-                self.my_theme = Themes.Icon()
-            elif chosen_theme == "Mercenary":
-                self.my_theme = Themes.Mercenary()
-            elif chosen_theme == "Outlaw":
-                self.my_theme = Themes.Outlaw()
-            elif chosen_theme == "Priest":
-                self.my_theme = Themes.Priest()
-            elif chosen_theme == "Scholar":
-                self.my_theme = Themes.Scholar()
-            elif chosen_theme == "Spacefarer":
-                self.my_theme = Themes.Spacefarer()
-            elif chosen_theme == "Xenoseeker":
-                self.my_theme = Themes.Xenoseeker()
-            else:
-                self.my_theme = Themes.Themeless()
+            self.my_theme = Themes.Theme(chosen_theme)
 
-        theme_window.close()
+        print(self.my_theme.theme_name)
+
         del theme_window
         return event not in (None, "Cancel")
 
-
     def get_abilities(self):
-        layout =  [
+        layout = [
             [sg.Radio('Point Buy', "RADIO1", default=True),
              sg.Radio('Array', "RADIO1"),
              sg.Radio('Roll', "RADIO1")],
-             [sg.OK()]
+            [sg.OK()]
         ]
         stat_method_window = sg.Window("Stat Generation Method", layout)
         event, values = stat_method_window.Read()
@@ -207,7 +196,6 @@ class Character:
         else:
             return self.roll_stats()
 
-
     def point_buy(self):
         for increase in self.ability_adjustments:
             self.abilities[increase] += self.ability_adjustments[increase]
@@ -221,7 +209,7 @@ class Character:
                                sg.Text(' points remaining.')]
         ] + [
             [sg.Text(ability+": "), sg.Text(self.abilities[ability]),
-                                    sg.Slider(key=ability, range=(0,18),
+             sg.Slider(key=ability, range=(0, 18),
                                     default_value=self.abilities[ability],
                                     orientation="horizontal",
                                     enable_events=True)]
@@ -263,7 +251,7 @@ class Character:
                 for abbrev in self.abilities.keys():
                     if values[abbrev]-self.abilities[abbrev] > 0:
                         remaining_points -= (values[abbrev]
-                                           -self.abilities[abbrev])
+                                             - self.abilities[abbrev])
 
                 my_window.Element('remaining_points').Update(
                     str(int(remaining_points))
