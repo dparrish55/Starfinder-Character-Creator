@@ -76,11 +76,11 @@ class Character:
                     [sg.Text("Theme____________________________________________"
                              "______________________________")]
                 ] + [
-                        [sg.In(self.my_theme.traits[trait_level][0], disabled = True, size=(30,1))] +
+                        [sg.In(self.my_theme.traits[trait_level][0], disabled=True, size=(30,1))] +
                         [sg.Multiline(
                             self.my_theme.traits[trait_level][1],
                             disabled=True,
-                            size=(45,5)
+                            size=(45, 5)
                         )] for trait_level in (1, 6, 12, 18)
                         if trait_level <= self.my_level and self.my_theme is not None
                 ] + [[sg.Text("")]] + [
@@ -151,24 +151,43 @@ class Character:
         abs_file_path = os.path.join(script_dir, rel_path)
         themes_file = open(abs_file_path, "r")
         themes = themes_file.read().splitlines()
+
         themes_file.close()
         themes.append("Themeless")
+        tooltip = ""
 
         layout = [
             [sg.Text('Please select your character theme.')],
-            [sg.Text('Theme: '), sg.Combo(themes)],
+            [sg.Listbox(values=themes, enable_events=True, key="themes", size=(45, 5)),
+             sg.Multiline(tooltip, disabled=True, key="tooltip", size=(45, 5))],
             [sg.OK(), sg.Cancel()]
         ]
         theme_window = sg.Window("Choose Theme", layout)
-        event, values = theme_window.Read()
+        while True:
+            event, values = theme_window.Read()
+
+            if event in ("OK", None, "Cancel"):
+                break
+            else:
+                print(values["themes"])
+                script_dir = os.path.realpath("themes")
+                rel_path = values["themes"][0].replace(" ", "_") + ".txt"
+                abs_file_path = os.path.join(script_dir, rel_path)
+                sub_theme_file = open(abs_file_path, "r")
+
+                info_lines = sub_theme_file.read().splitlines()
+
+                tooltip = "+1 " + info_lines[0].replace("*_*", " or ") + '\n' + info_lines[1]
+
+                theme_window.Element("tooltip").Update(value=tooltip)
+
+                sub_theme_file.close()
 
         theme_window.close()
 
         if event == "OK":
             chosen_theme = values[0]
             self.my_theme = Themes.Theme(chosen_theme)
-
-        print(self.my_theme.theme_name)
 
         del theme_window
         return event not in (None, "Cancel")
@@ -378,7 +397,7 @@ class Character:
                 do_not_commit = False
                 for i in (self.abilities.keys()):
                     self.abilities[i] = (scores[where_allocated[i]]
-                                    + self.ability_adjustments[i])
+                                         + self.ability_adjustments[i])
                     if self.abilities[i] > 18:
                         new_event = sg.PopupYesNo(i + " exceeds 18 with bonuses"
                                                       " added. This will forfeit " +

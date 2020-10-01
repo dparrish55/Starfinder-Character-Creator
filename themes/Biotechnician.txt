@@ -1,5 +1,5 @@
 Int
-
+You are a biotech researcher or avid user of such tech, constantly seeking out or developing new biotechnologies and combining existing augmentations with advancements in other fields. You might be a member of the Augmented, a researcher in a cutting-edge biotech corporations, a spellcasting genetomancer blending biotechnology with magic, or even a voluntary test subject for new augmentations. Either way, you have taken a strong hand in your own evolution.
 Biotechnician Knowledge 
 You have a sharp mind for the intricacies of biotech augmentations and keep up-to-date on current research in the field, whether because you work to develop such technology or because you are the beneficiary of biotech augmentations — or, most likely, both. Reduce the DC of Life Science checks to identify biotech augmentations and to recall knowledge about famous biotech corporations and researchers by 5. Medicine is a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to your Medicine checks. In addition, you gain an ability adjustment of +1 to Intelligence at character creation.
 Industry Connections 

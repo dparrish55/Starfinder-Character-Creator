@@ -1,5 +1,5 @@
 Dex
- Your knowledge of weather patterns, ability to make split second decisions, and near-instantaneous reaction time give you the ability to move just a bit faster than the lightning on your tail. Wherever you picked up this skill, you know how to read a situation and never take your surroundings for granted.
+You’ve learned recognize the order in the apparent randomness of a storm. Your knowledge of weather patterns, ability to make split second decisions, and near-instantaneous reaction time give you the ability to move just a bit faster than the lightning on your tail. Wherever you picked up this skill, you know how to read a situation and never take your surroundings for granted.
 Stormrunner Knowledge 
 The life of a stormrunner is about beating the odds in high-risk situations. Reduce the DC of Survival checks to endure severe weather, orienteer, and predict weather when in rainy, snowy, stormy, or windy conditions by 5. Survival is a class skill for you, or if it is a class skill from the class you take at 1st level, you gain a +1 bonus to Survival checks. In addition, you gain an ability adjustment of +1 to Dexterity at character creation.
 Eye Of The Storm 

@@ -1,5 +1,5 @@
 Con
-
+You have been affected by the energies of death and negative energy. You are not undead, but you have an affinity for the dead and undead that is inexplicable to most living creatures. You may have suffered an attack from an undead creature when very young, or you may have been exposed to strange radiation, dimensional rifts, or magic that caused a weak but permanent link between you and the Negative Energy Plane. You survived this formative experience, but not without some change.
 Death-Touched Knowledge 
 Thanks to your experiences with the undead and the growing power of the grave within your form, you have an instinctive understanding and recognition of negative energy and undead. You can use Perception, rather than Mysticism, to recall knowledge about undead and negative energy effects when you first observe them. Perception is a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Perception checks. In addition, you gain an ability adjustment of +1 to Constitution at character creation.
 Dread Vitality 

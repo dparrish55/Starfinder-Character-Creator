@@ -1,5 +1,5 @@
 Int
-
+You are a visionary in the field of micro-scale construction, able to elevate the applications of UPBs and other multifunctional materials to new heights. You might be a researcher who has made a breakthrough in design, a garage experimenter who delights in inventing or creating complex gizmos, or an enthusiast about all things homemade.
 Tinker Knowledge (1st Level)
 Reduce by 5 the DC of Engineering checks to identify technological devices, as well as Culture checks to recall knowledge about organizations and individuals that specialize in invention and do-it-yourself technology crafting. Engineering is a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to your Engineering checks. In addition, you gain an ability adjustment of +1 to Intelligence at character creation.
 Durable Crafting (6th Level)

@@ -1,5 +1,5 @@
 Int
-
+You are driven to explore the ruins of bygone civilizations, whether they are millennia old or recently collapsed. You might seek to explore the interior of Apostae or travel the galaxy to discover lost settlements, and your motives might be purely academic or simply profiteering. You often employ modern technology to aid in your explorations, but you are no stranger to unusual and ancient machinery, sometimes using them in the field when in a pinch.
 Xenoarchaeologist Knowledge 
 You have trained yourself to have few presuppositions about the foreign devices you uncover. Reduce the DC to identify rare, ancient, or alien tech by 5. Engineering is a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Engineering checks. In addition, you gain an ability adjustment of +1 to Intelligence at character creation.
 Tip of the Tongue 

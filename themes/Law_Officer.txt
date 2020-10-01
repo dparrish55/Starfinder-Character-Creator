@@ -1,5 +1,5 @@
 Wis
-
+You are an enforcer of law in a galaxy rife with chaos and corruption. Your mandate is to keep the peace, and you understand the weight of the role you play in society. Your senses are always tuned to your surroundings while you’re on the job, but you’re also skilled at navigating paperwork and bureaucratic records. As a figure of authority, you prevent crime and provide assistance to your community, so the public looks to you as a source of help and protection.
 Law Officer Knowledge 
 Your training and job experience allow you to deal with everyday citizens and dangerous criminal elements with equal efficacy. Combining keen senses and intuition, you have learned to quickly determine if other people you are interacting with are acting suspiciously, hiding or misrepresenting the truth, or trying to pass coded messages. Reduce the DC of Sense Motive checks to detect deception and discern secret messages by 5. Apply the same reduction to DCs for any checks you attempt to recall knowledge about criminals, law-enforcement agents, laws, and related law-enforcement practices. Sense Motive is a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Sense Motive checks. In addition, you gain an ability adjustment of +1 to Wisdom at character creation.
 Investigative Savvy 

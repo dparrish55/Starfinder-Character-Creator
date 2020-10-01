@@ -1,5 +1,5 @@
 Con
-
+You have an unquenchable trailblazer’s spirit, matched with the training and fortitude you’ll need to carve out a new life for yourself and others in the wilderness. Although you might be the sort to go it alone on the frontier, you’re more likely part of a small group of settlers. You might be preparing for your first voyage, or you might be a grizzled veteran who has already helped found several successful colonies.
 Colonist Knowledge  
 You have amassed a vast knowledge of past colonization efforts, including those that have failed due to ignorance or carelessness. You know that basic knowledge about a new, uncharted world is the most valuable resource any colonist can have. Reduce the DC to identify average creatures using Life Science by 5. Survival is a class skill for you, though if it is a class skill from the class you take at 1st level, you insteadgain a +1 bonus to Survival checks. In addition, you gain an ability adjustment of +1 to Constitution at character creation
 Providing for Others 

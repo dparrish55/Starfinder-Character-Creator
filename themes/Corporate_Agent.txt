@@ -1,5 +1,5 @@
 Cha
-
+Corporations control much of the modern world, from the food each person eats to the weapons a soldier deploys on the field of battle. You are an agent of one such corporation, which relies on your negotiation, deal-making, and your natural cunning to advance its agendas. Whether you are making proposals to agents of other corporations to split the mining rights for a valuable asteroid or establishing your corporation’s presence on a newly discovered world, you are the company’s eyes, ears, and hands.
 Corporate Agent Knowledge 
 You are deeply connected to the world of corporate culture, and know all the movers and shakers. When attempting a Profession or Culture check to recall knowledge about corporations and their executives, reduce the DC by 5. Diplomacy is a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Diplomacy checks. In addition, you gain an ability adjustment of +1 to Charisma at character creation.
 Networking 

@@ -1,5 +1,5 @@
 Cha
-
+In their adolescence, kasathas undertake a yearlong walkabout in which they are encouraged to experience other cultures. You have examined this practice (or perhaps undergone it yourself) and have concluded that a year is not enough time to learn from the countless other civilizations. In any case, you don’t need to be a kasatha to consider yourself a student of the universe.
 Tempered Pilgrim Knowledge 
 You have read and studied much in your eagerness to learn about and experience new cultures, and you often know about them before you encounter them. Reduce the DC of Culture checks to recall knowledge about a culture’s customs and related topics by 5. In addition, whenever you take a rank in Culture, you learn to speak and read two new languages instead of one. Culture is a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Culture checks. In addition, you gain an ability adjustment of +1 to Charisma at character creation.
 Compelling Influence 

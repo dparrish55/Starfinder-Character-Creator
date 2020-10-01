@@ -1,129 +1,43 @@
-Ace Pilot: 
-Dex
-Thanks to steady hands and nerves of steel, you are skilled at operating starships and other vehicles.
-Athlete: 
-Str or Dex or Con
-You currently are or formerly were a professional-level athlete with highly specialized physical skills.
-Biotechnician: 
-Int
-You are a biotech researcher or avid user of such tech, constantly seeking out or developing new biotechnologies and combining existing augmentations with advancements in other fields.
-Bounty Hunter: 
-Con
-Almost nothing will stop you from tracking down your quarries and returning them dead or alive.
-Bureaucrat: 
-Int or Wis or Cha
-You’re a civil servant, facilitating the day-to-day operations of a governmental agency and leaping systemic hurdles to accomplish your goals.
-Colonist: 
-Con
-You have an unquenchable trailblazer’s spirit, matched with the training and fortitude you’ll need to carve out a new life for yourself and others in the wilderness.
-Corporate Agent: 
-Cha
-Corporations control much of the modern world, from the food each person eats to the weapons a soldier deploys on the field of battle.
-Cult Hunter: 
-Wis
-Your life’s work is to ferret out cults and free those who have fallen into their clutches.
-Cultist: 
-Con
-You served as a hooded, faceless adherent to a religion or organization that remains hidden from public view—usually because its aims are illegal or immoral.
-Cyberborn: 
-Int
-
-Death-Touched: 
-Con
-You have been affected by the energies of death and negative energy.
-Dragonblood: 
-Cha
-You can feel draconic magic pulsing through your veins, and the guttural roar of dragons invigorates you.
-Dream Prophet: 
-Wis
-You have a transcendent, innate understanding of the mystical power suffusing the universe.
-Formless Emissary: 
-Abiarazi
-
-Giantblood: 
-Str
-Giants’ blood flows through your veins, and you feel a fascination and kinship with these towering beings.
-Gladiator: 
-Con
-You are a veteran of the public blood sport industry—a survivor of countless battles to earn a shiny credstick of winnings, the adulation of your fans, or both.
-Golden Oldie: 
-Wis
-See that crusty old man at the bar? He’s done a lot in his time and seen even more.
-Grifter: 
-Int
-Though you feel comfortable among all sorts of lowlifes, you rely on your intellect to defraud others.
-Guard: 
-Str or Dex
-You are a guard, lookout, or forward scout, and it’s your job to keep a constant eye out.
-Icon: 
-Cha
-You are a popular and respected celebrity within the bounds of colonized space.
-Infamous: 
-VariantIconTheme
-You are not so much a famous celebrity as an infamous one.
-Law Officer: 
-Wis
-You are an enforcer of law in a galaxy rife with chaos and corruption.
-Mercenary: 
-Str
-You are a well-trained soldier of fortune who works well with your companions in battle.
-Noble Scion: 
-Cha
-You were born into a position of power and privilege.
-Outlaw: 
-Dex
-Whether you are guilty or not, you are a wanted criminal in a city, on a planet, or even throughout the galaxy.
-Paranormal Investigator: 
-Int or Wis or Cha
-Some, upon waking, want to forget their nightmares, find comfort among their companions, and dream of new adventures.
-Priest: 
-Wis
-Your unshakable devotion to a philosophy or religion forms the core of your personality.
-Prisoner: 
-Wis
-You have been incarcerated and have either escaped or been released, perhaps conditionally.
-Quartermaster: 
-Int
-While many think of front-line soldiers and officers as the core of a fighting force, you know that no military can function without access to supplies.
-Roboticist: 
-Int
-You are fascinated by the internal workings of machines, whether they’re intelligent constructs or technological equipment.
-Scholar: 
-Int
-As an academic, you have a broad knowledge base and a thirst to expand it.
-Sensate: 
-Con
-You revel in new sensations and experiences.
-Shipbuilder: 
-Manu
-
-Solar Disciple: 
-Wis
-The sun is the source of all life in the system, and though you may not worship it directly, you seek to honor this precious gift.
-Space Pirate: 
-Dex
-You are a free-ranging corsair within the wild and unpredictable fringes of galactic civilization and live by your own code, or a code shared with other like-minded individuals.
-Spacefarer: 
-Con
-You live your life among the stars, seeking new worlds to explore and yearning for the next adventure.
-Stormrunner: 
-Dex
-You’ve learned recognize the order in the apparent randomness of a storm.
-Street Rat: 
-Dex
-You were born into poverty among the lower classes of the galaxy.
-Tempered Pilgrim: 
-Cha
-In their adolescence, kasathas undertake a yearlong walkabout in which they are encouraged to experience other cultures.
-Tinker: 
-Int
-You are a visionary in the field of micro-scale construction, able to elevate the applications of UPBs and other multifunctional materials to new heights.
-Wild Warden: 
-Wis
-You believe that the trappings of civilization have made others soft, so you eschew them to live in the wilds, such as the jungles of Castrovel.
-Xenoarchaeologist: 
-Int
-You are driven to explore the ruins of bygone civilizations, whether they are millennia old or recently collapsed.
-Xenoseeker: 
-Cha
-You strive to make contact with alien life-forms.
+Ace Pilot
+Athlete
+Biotechnician
+Bounty Hunter
+Bureaucrat
+Colonist
+Corporate Agent
+Cult Hunter
+Cultist
+Cyberborn
+Death-Touched
+Dragonblood
+Dream Prophet
+Formless Emissary
+Giantblood
+Gladiator
+Golden Oldie
+Grifter
+Guard
+Icon
+Infamous
+Law Officer
+Mercenary
+Noble Scion
+Outlaw
+Paranormal Investigator
+Priest
+Prisoner
+Quartermaster
+Roboticist
+Scholar
+Sensate
+Shipbuilder
+Solar Disciple
+Space Pirate
+Spacefarer
+Stormrunner
+Street Rat
+Tempered Pilgrim
+Tinker
+Wild Warden
+Xenoarchaeologist
+Xenoseeker

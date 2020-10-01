@@ -1,5 +1,5 @@
 Wis
-
+The sun is the source of all life in the system, and though you may not worship it directly, you seek to honor this precious gift. From a distance, the sun is a serenely glowing light, but in actuality, it is a churning mass of plasma that reaches temperatures of millions of degrees. By meditating on this contradiction, you attempt to achieve inner peace and greater self-control.
 Solar Disciple Knowledge 
 You’ve read extensively about the physics of the sun and its associated planes and the best theories about how they interact to produce the solar environment. You’ve also made a study of every sun-based religion down to the most primitive sun cult. Reduce the DC of Physical Science checks to recall knowledge about scientific questions concerning the sun and light by 5. Reduce the DC of Mysticism checks to recall knowledge about sun-focused religions, the Elemental Plane of Fire, and the Positive Energy Plane by 5. Perception is a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Perception checks. In addition, you gain an ability adjustment of +1 to Wisdom at character creation.
 Mental Gravity 

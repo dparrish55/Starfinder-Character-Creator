@@ -1,5 +1,5 @@
 Wis
-
+You have a transcendent, innate understanding of the mystical power suffusing the universe. You don’t command this energy; the most you can do is accept it and absorb it—and when you become utterly in sync with those psychic reverberations encapsulated in the Dreamers’ songs, you gain oracular glimpses of things yet to come.
 Dream Prophet Knowledge 
 Your perceptions of the psychic energies permeating reality provide you insight into various magical and mystical phenomena, especially those produced by creatures that can cast spells. Reduce the DCs of Mysticism checks to identify spells as they are being cast and to recall knowledge about arcane symbols and magic traditions by 5. Mysticism is always a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Mysticism checks. In addition, you gain an ability adjustment of +1 to Wisdom at character creation.
 Flash of Prescience 

@@ -1,5 +1,5 @@
 Con
-
+You are a veteran of the public blood sport industry—a survivor of countless battles to earn a shiny credstick of winnings, the adulation of your fans, or both. You might be a veteran of fighting pits, a student of the ritualized styles of battleflowers, or simply a masochist. You’re likely to die before your habits do, though, as you find few things more exciting than the rush of battle and the pounding cheers of a thousand fans.
 Gladiator Knowledge 
 Your experience in the arenas has exposed you to countless warrior cultures, and you both recognize strange martial arts and know how to impress others with your own unique style. Reduce the DC of Culture checks to recall knowledge about entertainment combat, fighting styles, and gladiatorial traditions by 5. Intimidate is a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Intimidate checks. In addition, you gain an ability adjustment of +1 to Constitution at character creation.
 Famous Fighter 

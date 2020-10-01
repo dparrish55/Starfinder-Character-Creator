@@ -1,5 +1,5 @@
 Wis
-
+You have been incarcerated and have either escaped or been released, perhaps conditionally. You might have run afoul of the law or been unjustly locked up for a crime you didn’t commit. Either way, you have learned quite a bit during your time as an inmate. You figured out how to navigate gangs, guards, and sometimes dangerous and deceitful individuals. Now that you’re free of incarceration, you rely on the tools you learned and the conditioning you acquired to survive in the outside world.
 Prisoner Knowledge 
 You’ve spent time around criminals who got caught or people who were incarcerated unjustly, and you’ve experienced firsthand the effects of the criminal justice system on individuals. Reduce the DC of Culture checks to recall knowledge about criminal elements, incidents of corruption, and penal institutions by 5. Perception is a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Perception checks. In addition, you gain an ability adjustment of +1 to Wisdom at character creation.
 Conceal Contraband 

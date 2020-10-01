@@ -1,5 +1,5 @@
 VariantIconTheme
-
+You are not so much a famous celebrity as an infamous one. Your “fans” are actually those who fear your reputation and will give you things out of fear or respect. While they are the same theme ability, you can refer to the one you get at 6th level as “Infamous” and the one at 12th as “Dreaded”.
 Infamous Knowledge 
 When attempting an Intimidate a creature who is aware of your infamous background, decrease the DC by 5. Culture also becomes a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Culture checks. In addition, you gain an ability adjustment of +1 to Charisma at character creation.
 Dread Lord 

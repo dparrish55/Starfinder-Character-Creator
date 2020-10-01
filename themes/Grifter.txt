@@ -1,5 +1,5 @@
 Int
-
+Though you feel comfortable among all sorts of lowlifes, you rely on your intellect to defraud others. Whether you work the streets alone, in a small group, or as the brains behind a larger organization, you analyze opportunities and unapologetically exploit the system to achieve your ends. As a grifter, you’re an expert in one or two trades, but you also have the knowledge and confidence to convincingly pass as an authority in just about any profession.
 Grifter Knowledge 
 You dabble in multiple professions and have the connections and deep knowledge of each occupation’s inner workings, allowing you to exploit colleagues and paying customers alike. When attempting a Culture or Profession check to recall knowledge about commercial organizations or businesses, reduce the DC by 5. You gain a +1 bonus to one Profession skill of your choice at character creation, and you can attempt any Profession skill untrained. In addition, you gain an ability adjustment of +1 to Intelligence at character creation.
 Calculated Exploitation 

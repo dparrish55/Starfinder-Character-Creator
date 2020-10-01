@@ -1,5 +1,5 @@
 Wis
-
+You believe that the trappings of civilization have made others soft, so you eschew them to live in the wilds, such as the jungles of Castrovel. You don’t necessarily avoid technology, as it can help you survive in some of the harsher, more extreme environments, but you tend to adorn your equipment with furs and leaves. This might make you seem like a backwards primitive to some people, but you know that nature—in all its forms—will be around long after all societies have collapsed and turned to dust.
 Wild Warden Knowledge 
 In the course of your explorations of various biomes, you have studied all manner of ﬂora and fauna. Reduce the DC to identify creatures of the animal, plant, and vermin types using Life Sciences by 5. Survival is a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Survival checks. In addition, you gain an ability adjustment of +1 to Wisdom at character creation
 Protector of the Wild 

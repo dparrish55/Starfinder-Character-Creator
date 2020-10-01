@@ -1,5 +1,5 @@
 Str
-
+Giants’ blood flows through your veins, and you feel a fascination and kinship with these towering beings. You may stand a little taller than most of your kind, and you are capable of great feats of endurance. Like many giantbloods, you likely bear some physical attributes of the specific giants you are descended from. You’ve learned to tap into giants’ great strength and fortitude to perform feats most people of your kind would find difficult, if not impossible.
 Giantblood Knowledge 
 You have great respect for giants and know much about their varied societies, cultural traditions, and famous figures. When you attempt a Culture or Life Science check to identify or recall knowledge about giants, their abilities, or the names of famous giants, reduce the DC by 5. Culture is a class skill for you. If it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Culture checks. In addition, you gain an ability adjustment of +1 to Constitution at character creation.
 Oversized Equipment 

@@ -33,6 +33,8 @@ def get_themes():
 
         theme_name = theme_space.replace(" ", "_")
 
+        themes_file.write(theme_space +'\n')
+
         rel_path = theme_name + ".txt"
         abs_file_path = os.path.join(script_dir, rel_path)
         if os.path.exists(abs_file_path):
@@ -64,8 +66,8 @@ def get_themes():
                 tooltip = False
                 tooltip_text = '\n' + theme_mod.replace("*_*", " or ")
                 tooltip_text += ability_text[:ability_text.find('.')+1]
-                themes_file.write(theme_space + ": " + tooltip_text + '\n')
-                continue
+                # themes_file.write("*!*" + theme_space + '\n' + tooltip_text + '\n')
+                # continue
 
             elif ability in theme_soup.find_all("p", {"class": "name"}):
                 sub_theme_file.write('\n')
