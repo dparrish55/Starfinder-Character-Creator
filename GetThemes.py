@@ -31,9 +31,6 @@ def get_themes():
         theme_mod = theme_mod.replace("oror", "or")
         theme_mod = theme_mod.replace("or", "*_*")
 
-        themes_file.write(theme_space)
-        themes_file.write('\n')
-
         theme_name = theme_space.replace(" ", "_")
 
         rel_path = theme_name + ".txt"
@@ -41,7 +38,7 @@ def get_themes():
         if os.path.exists(abs_file_path):
             continue
 
-        sub_theme_file = open(abs_file_path, "w", encoding = "utf-8")
+        sub_theme_file = open(abs_file_path, "w", encoding="utf-8")
 
         theme_url = theme.a['href']
         theme_page = requests.get(theme_url)
@@ -62,15 +59,20 @@ def get_themes():
             if "Starfinder" in ability_text:
                 continue
 
-            if tooltip == True:
+            if tooltip:
                 # sub_theme_file.write("*%*")
                 tooltip = False
+                tooltip_text = '\n' + theme_mod.replace("*_*", " or ")
+                tooltip_text += ability_text[:ability_text.find('.')+1]
+                themes_file.write(theme_space + ": " + tooltip_text + '\n')
+                continue
+
             elif ability in theme_soup.find_all("p", {"class": "name"}):
                 sub_theme_file.write('\n')
                 # sub_theme_file.write("*!*")
                 prev_strong = True
             else:
-                if prev_strong == True:
+                if prev_strong:
                     sub_theme_file.write('\n')
                 else:
                     sub_theme_file.write(' ')

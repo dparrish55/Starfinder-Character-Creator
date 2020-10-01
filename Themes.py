@@ -30,7 +30,7 @@ class Theme:
     def prompt_ability(self, ability_names):
         layout = [
             [sg.Text('Please select your theme bonus.')],
-            [sg.Text('+1 to: '), sg.Combo(ability_names)],
+            [sg.Text('+1 to: '), sg.Combo(ability_names, size=(10, 1))],
             [sg.OK()]
         ]
         ability_prompt_window = sg.Window("Theme Bonus", layout)

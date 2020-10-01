@@ -74,7 +74,7 @@ class Character:
             elif character_event == "btn_traits":
                 layout = [
                     [sg.Text("Theme____________________________________________"
-                        "______________________________")]
+                             "______________________________")]
                 ] + [
                         [sg.In(self.my_theme.traits[trait_level][0], disabled = True, size=(30,1))] +
                         [sg.Multiline(
@@ -85,7 +85,7 @@ class Character:
                         if trait_level <= self.my_level and self.my_theme is not None
                 ] + [[sg.Text("")]] + [
                     [sg.Text("Race_____________________________________________"
-                        "______________________________")]
+                             "______________________________")]
                 ] + [
                     [sg.In(trait, disabled = True, size=(30,1))]+
                     [sg.Multiline(
@@ -111,7 +111,7 @@ class Character:
 
     def choose_race(self):
         races = ["Android", "Human", "Kasatha",
-                "Lashunta", "Shirren", "Vesk", "Ysoki"]
+                 "Lashunta", "Shirren", "Vesk", "Ysoki"]
         layout = [
             [sg.Text('Please select your character race.')],
             [sg.Text('Race: '), sg.Combo(races)],
@@ -201,7 +201,6 @@ class Character:
             self.abilities[increase] += self.ability_adjustments[increase]
 
         points_allocated = False
-        remaining_points = 10
         layout = [
             [sg.Text('Please allocate up to 10 points total.')],
 
@@ -210,9 +209,9 @@ class Character:
         ] + [
             [sg.Text(ability+": "), sg.Text(self.abilities[ability]),
              sg.Slider(key=ability, range=(0, 18),
-                                    default_value=self.abilities[ability],
-                                    orientation="horizontal",
-                                    enable_events=True)]
+             default_value=self.abilities[ability],
+             orientation="horizontal",
+             enable_events=True)]
             for ability in self.abilities.keys()
         ] + [
             [sg.OK(), sg.Cancel()]
@@ -265,7 +264,6 @@ class Character:
         for abbrev in self.abilities.keys():
             self.abilities[abbrev] = int(values[abbrev])
 
-
     def pick_array(self):
         arrays = {
             "Focused": [18, 14, 11, 10, 10, 10],
@@ -275,7 +273,7 @@ class Character:
 
         layout =  [
             [sg.Radio(array_name, "RADIO0", key=array_name,
-                tooltip = arrays[array_name], default=(array_name=="Focused"))
+             tooltip=arrays[array_name], default=(array_name == "Focused"))
                 for array_name in arrays.keys()
             ]
         ] + [
@@ -297,7 +295,6 @@ class Character:
             self.allocate_abilities(which_array)
             return True
 
-
     def roll_stats(self):
         random.seed()
         rolled_scores = []
@@ -309,7 +306,6 @@ class Character:
             d6_rolls.sort()
             rolled_scores.append(d6_rolls[1] + d6_rolls[2] + d6_rolls[3])
         return self.allocate_abilities(rolled_scores)
-
 
     def allocate_abilities(self, scores):
         scores.sort()
@@ -340,12 +336,12 @@ class Character:
 
         radio_buttons = [
             [sg.Radio(ability, "RADIO"+str(i), key = ability + str(i),
-                enable_events = True, disabled = disable_buttons[ability])
-                for ability in self.abilities.keys()]
+             enable_events = True, disabled = disable_buttons[ability])
+             for ability in self.abilities.keys()]
             for i in range(0,6)
         ]
 
-        layout =  []
+        layout = []
         for i in range(0,6):
             layout.append(score_prompts[i])
             layout.append(radio_buttons[i])
@@ -378,16 +374,16 @@ class Character:
             if event is None:
                 return False
 
-            elif event=="OK":
+            elif event == "OK":
                 do_not_commit = False
                 for i in (self.abilities.keys()):
                     self.abilities[i] = (scores[where_allocated[i]]
                                     + self.ability_adjustments[i])
                     if self.abilities[i] > 18:
                         new_event = sg.PopupYesNo(i + " exceeds 18 with bonuses"
-                                    " added. This will forfeit " +
-                                    str(self.abilities[i] - 18) + " ability "
-                                    "points.  Would you like to continue?")
+                                                      " added. This will forfeit " +
+                                                      str(self.abilities[i] - 18) + " ability "
+                                                      "points.  Would you like to continue?")
                         if new_event == "Yes":
                             self.abilities[i] = 18
                             do_not_commit = False
