@@ -3,6 +3,7 @@ import Race
 import Themes
 import random
 import os
+import codecs
 
 
 class Character:
@@ -169,15 +170,17 @@ class Character:
             if event in ("OK", None, "Cancel"):
                 break
             else:
-                print(values["themes"])
                 script_dir = os.path.realpath("themes")
                 rel_path = values["themes"][0].replace(" ", "_") + ".txt"
                 abs_file_path = os.path.join(script_dir, rel_path)
                 sub_theme_file = open(abs_file_path, "r")
 
-                info_lines = sub_theme_file.read().splitlines()
+                try:
+                    info_lines = sub_theme_file.read().splitlines()
+                    tooltip = "+1 " + info_lines[0].replace("*_*", " or ") + '\n' + info_lines[1]
 
-                tooltip = "+1 " + info_lines[0].replace("*_*", " or ") + '\n' + info_lines[1]
+                except UnicodeDecodeError as e:
+                    tooltip = sub_theme_file.read()
 
                 theme_window.Element("tooltip").Update(value=tooltip)
 
