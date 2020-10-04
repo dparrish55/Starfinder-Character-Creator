@@ -1,6 +1,9 @@
-VariantIconTheme
- You are not so much a famous celebrity as an infamous one. Your “fans” are actually those who fear your reputation and will give you things out of fear or respect. While they are the same theme ability, you can refer to the one you get at 6th level as “Infamous” and the one at 12th as “Dreaded”.
-Infamous Knowledge 
+Cha You are not so much a famous celebrity as an infamous one. Your “fans” are actually those who fear your reputation and will give you things out of fear or respect. While they are the same theme ability, you can refer to the one you get at 6th level as “Infamous” and the one at 12th as “Dreaded”.
+Infamous Knowledge (1st)
 When attempting an Intimidate a creature who is aware of your infamous background, decrease the DC by 5. Culture also becomes a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Culture checks. In addition, you gain an ability adjustment of +1 to Charisma at character creation.
-Dread Lord 
+Infamous (6th)
+You are famous enough that pretty much everyone has either heard of you or can quickly find information about you (it’s a DC 10 Culture check to recognize your name and a DC 20 Culture check for someone to recognize you out of context from your appearance alone). Among those who follow your iconic profession, you’ve built up both fans and detractors due to your celebrity. If you’re looking for a generic person like “a doctor who can treat this disease,” you can almost always find one who’s a fan and whose attitude starts as friendly or helpful to you; this takes 2d4 hours. At the GM’s discretion, fans might give you services (although not goods) for a discount or even for free.
+Dreaded (12th)
+Your reputation grows to the point that your name is ubiquitous. The DC of Culture checks to recognize you is reduced to 5 (or 10 to recognize you out of context from your appearance alone) and it takes only 1d4 hours to find a fan who meets a generic description. In addition, fans give you a 10% discount on purchased goods.
+
 Up to twice per day when you demean a creature until you utterly humiliate them or break their will, an act that takes at least 10 minutes, you recover 1 Resolve Point. A variant theme is a modification to an existing theme. These give an adjustment to a few parts of the theme while keeping the other aspects intact. This is often to give a theme new flavor or an interesting new angle while keeping the rough idea the same. Classes of Red Sector © 2019 Little Red Goblin Games LLC; Authors: Scott Gladstein, Ian Sisson, Sasha Lindley Hall.
