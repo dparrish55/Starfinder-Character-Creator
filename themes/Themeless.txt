@@ -1,0 +1,10 @@
+Str*_*Dex*_*Con*_*Int*_*Wis*_*Cha
+Your background doesn't fit into any of the listed options.  But that doesn't stop you from having an awesome backstory that gives you some equivalent boosts!
+General Knowledge
+You gain a class skill of your choice when you create a themeless character.  Also, you gain an ability adjustment of +1 to any ability score you choose.
+Certainty
+Once per day before you roll a skill check, you can gain a +2 bonus to that skill for that check.
+Extensive Studies
+Choose a skill that is a class skill for you.  Once per day, you can reroll one such skill check before learning the results of the roll.  You must take the second result, even if it is worse.
+Steely Determination
+Increase your pool of Resolve Points by 1.

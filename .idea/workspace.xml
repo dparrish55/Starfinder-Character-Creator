@@ -21,6 +21,51 @@
   <component name="ChangeListManager">
     <list default="true" id="d8f6035c-b0c3-4de0-aa3f-32a554a07b83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Character.py" beforeDir="false" afterPath="$PROJECT_DIR$/Character.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetThemes.py" beforeDir="false" afterPath="$PROJECT_DIR$/GetThemes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Themes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Ace_Pilot.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Ace_Pilot.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Athlete.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Athlete.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Biotechnician.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Biotechnician.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Bounty_Hunter.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Bounty_Hunter.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Bureaucrat.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Bureaucrat.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Colonist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Colonist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Corporate_Agent.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Corporate_Agent.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Cult_Hunter.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Cult_Hunter.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Cultist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Cultist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Cyberborn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Cyberborn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Death-Touched.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Death-Touched.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Dragonblood.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Dragonblood.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Dream_Prophet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Dream_Prophet.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Formless_Emissary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Formless_Emissary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Giantblood.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Giantblood.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Gladiator.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Gladiator.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Golden_Oldie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Golden_Oldie.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Grifter.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Grifter.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Guard.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Guard.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Icon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Icon.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Infamous.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Infamous.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Law_Officer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Law_Officer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Mercenary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Mercenary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Noble_Scion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Noble_Scion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Outlaw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Outlaw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Paranormal_Investigator.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Paranormal_Investigator.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Priest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Priest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Prisoner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Prisoner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Quartermaster.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Quartermaster.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Roboticist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Roboticist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Scholar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Scholar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Sensate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Sensate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Shipbuilder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Shipbuilder.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Solar_Disciple.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Solar_Disciple.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Space_Pirate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Space_Pirate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Spacefarer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Spacefarer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Stormrunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Stormrunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Street_Rat.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Street_Rat.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Tempered_Pilgrim.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Tempered_Pilgrim.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Tinker.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Tinker.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Wild_Warden.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Wild_Warden.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Xenoarchaeologist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Xenoarchaeologist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Xenoseeker.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Xenoseeker.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +74,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Character.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="182" column="51" lean-forward="true" selection-start-line="182" selection-start-column="51" selection-end-line="182" selection-end-column="51" />
+            <state relative-caret-position="453">
+              <caret line="159" column="15" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="15" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -41,14 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Themes.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Race.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-              <folding>
-                <element signature="e#15#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="4403">
+              <caret line="259" column="5" lean-forward="true" selection-start-line="259" selection-start-column="5" selection-end-line="259" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -56,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GetThemes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+            <state relative-caret-position="1106">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
             </state>
           </provider>
         </entry>
@@ -67,6 +109,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>remaining_points</find>
+      <find>self.ability_adjustments</find>
+      <find>Themes</find>
+      <find>Themes.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -77,6 +122,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/GetThemes.py" />
+        <option value="$PROJECT_DIR$/Themes.py" />
         <option value="$PROJECT_DIR$/Character.py" />
       </list>
     </option>
@@ -97,6 +143,11 @@
             <path>
               <item name="Starfinder-Character-Creator" type="b2602c69:ProjectViewProjectNode" />
               <item name="Starfinder-Character-Creator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Starfinder-Character-Creator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Starfinder-Character-Creator" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -145,7 +196,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24979591" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24979591" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.32952815" />
       <window_info anchor="bottom" id="Python Console" />
@@ -199,30 +250,43 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/themes/Ace_Pilot.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/themes.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GetThemes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1106">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Themes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        <state relative-caret-position="340">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
           <folding>
             <element signature="e#15#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GetThemes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Character.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="182" column="51" lean-forward="true" selection-start-line="182" selection-start-column="51" selection-end-line="182" selection-end-column="51" />
+        <state relative-caret-position="453">
+          <caret line="159" column="15" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="15" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Race.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4403">
+          <caret line="259" column="5" lean-forward="true" selection-start-line="259" selection-start-column="5" selection-end-line="259" selection-end-column="5" />
         </state>
       </provider>
     </entry>

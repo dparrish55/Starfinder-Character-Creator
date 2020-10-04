@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 import Race
-import Themes
+import Theme
 import random
 import os
 import codecs
@@ -35,6 +35,9 @@ class Character:
                 break
 
             elif character_event == "btn_generate":
+                for score in self.abilities:
+                    self.ability_adjustments[score] = 0
+
                 for increase in self.my_race.ability_improvements:
                     self.ability_adjustments[increase] += self.my_race.ability_improvements[increase]
 
@@ -175,12 +178,8 @@ class Character:
                 abs_file_path = os.path.join(script_dir, rel_path)
                 sub_theme_file = open(abs_file_path, "r")
 
-                try:
-                    info_lines = sub_theme_file.read().splitlines()
-                    tooltip = "+1 " + info_lines[0].replace("*_*", " or ") + '\n' + info_lines[1]
-
-                except UnicodeDecodeError as e:
-                    tooltip = sub_theme_file.read()
+                info_lines = sub_theme_file.read().splitlines()
+                tooltip = "+1 " + info_lines[0].replace("*_*", " or ") + '\n' + info_lines[1]
 
                 theme_window.Element("tooltip").Update(value=tooltip)
 
@@ -189,8 +188,8 @@ class Character:
         theme_window.close()
 
         if event == "OK":
-            chosen_theme = values[0]
-            self.my_theme = Themes.Theme(chosen_theme)
+            chosen_theme = values["themes"][0]
+            self.my_theme = Theme.Theme(chosen_theme)
 
         del theme_window
         return event not in (None, "Cancel")
@@ -219,6 +218,9 @@ class Character:
             return self.roll_stats()
 
     def point_buy(self):
+        for increase in self.ability_adjustments:
+            self.abilities[increase] = 10
+
         for increase in self.ability_adjustments:
             self.abilities[increase] += self.ability_adjustments[increase]
 
@@ -293,11 +295,11 @@ class Character:
             "Versatile": [14, 14, 14, 11, 10, 10]
         }
 
-        layout =  [
+        layout = [
             [sg.Radio(array_name, "RADIO0", key=array_name,
              tooltip=arrays[array_name], default=(array_name == "Focused"))
                 for array_name in arrays.keys()
-            ]
+             ]
         ] + [
              [sg.OK()]
         ]
@@ -326,6 +328,7 @@ class Character:
                 d6_rolls.append(random.randint(0,6))
 
             d6_rolls.sort()
+            print(d6_rolls)
             rolled_scores.append(d6_rolls[1] + d6_rolls[2] + d6_rolls[3])
         return self.allocate_abilities(rolled_scores)
 
